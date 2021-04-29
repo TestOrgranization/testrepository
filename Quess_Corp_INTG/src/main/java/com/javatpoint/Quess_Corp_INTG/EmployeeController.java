@@ -1,0 +1,29 @@
+package com.javatpoint.Quess_Corp_INTG;
+
+import java.net.URISyntaxException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.javatpoint.Quess_Corp_INTG.model.User;
+
+@RestController
+public class EmployeeController {
+
+
+	@RequestMapping(value = "/")
+	public String getmessage() throws URISyntaxException {
+		//final String uri = "http://localhost:9091/userlist";
+		//final String uri = "https://bfl-dev-api.heptagon.tech/v1/user/iomsEmployeedetails?HepUId=abe4904ad9004b45f6de5aee69295c04225273b764fc4b0878d387f304b40662766fa77009bcb23b0e3b05e30b60808217c5ac963af9226edbf5fd52366a72e9d07dddd1dedf1576b67bd9eead2d9f63205fe025274d80b4864d85589e7ff8e3c284347ce2b56e82e495095e31ce57a08876bd2caef5b245e066cec039cacfc37d76af54594d8844d426289b773bf7a14bb3e7130b584f1a1ff2d61580b4f9339757255c451c3473460dc18239980594797333e26e39a915602fa7f85d801a4f0cfd4496b6c991a9917f4f9b2f9cf37f8ab904b804f2fa653f10780d0360eedd48b5c3a9678c0567a43d7c10dc2599cf3408d12dc3d576db4462bdecbb7f4f50e3e7a7e8d5286aaa6d78c617ac40ad3fb9abcee65d9f1354c36e4afcfa5126b4cc91d18c83af247bdd8b2bf9078871260225885573bde8554b88d50b484303c68a6d3ea624b8677e63f3f21c71febc50e48fa2dea7139c364dccfae4dfa319a1a53c238505dbc3718692f52f80ca578bbaff130e737d1513d8e3c03b9917601226018f4d94ba87dbd83016790ca35f277ebc4069777a2fa02f72e81f352f6b1b8bca5ba71f0aad7be1a5e91e8baf903e4599cd45029d03521aff2a39c3d0ed719a623b28f413e15719a3dc4897c7d15a78ffb2e361cf2dd74f1f196faae46fdc07ecd2c037117343abaf21c1153c25b96132b118cd4dcc7805fbac212e12716611c61d3edc3fa10a65187155d6c8f1f26e0131886b8d4877aa5120116c50fff0759a6551ea0d175f6c6f49f5825a733b5bca33506354e1615e1b1ad30fdc69f392965563e5a1036002076ecee3ee35b5eb374c4346eec3996d9b4c8f38247d17ef67c66715a94c99a3389a7d79f26d7dc2856cdcb7169f22280460d7477b446e";
+
+		// TODO: Autowire the RestTemplate in all the examples
+//		RestTemplate restTemplate = new RestTemplate();
+//
+//		String user = restTemplate.getForObject(uri, String.class);
+//		System.out.println(user);
+		return "SUCESS";
+	}
+}
