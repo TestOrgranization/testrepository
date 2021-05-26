@@ -2,10 +2,10 @@ package com.javatpoint.SpringbootScheduler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@Controller
+@EnableScheduling
 public class SpringBootExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootExampleApplication.class, args);
